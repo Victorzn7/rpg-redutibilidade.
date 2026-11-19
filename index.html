@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>As Crônicas da Redutibilidade</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">✦</span><div><strong>AS CRÔNICAS DA REDUTIBILIDADE</strong><small>Uma jornada pelo reino dos problemas computacionais</small></div></div>
+      <button class="ghost" id="resetBtn" title="Apagar o progresso salvo">Reiniciar jornada</button>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <div class="hero-card">
+          <div class="avatar" id="avatar">🧙</div>
+          <h2 id="heroName">Aprendiz</h2>
+          <span class="rank" id="rank">Iniciante</span>
+          <div class="level-line"><span id="levelText">Nível 1</span><span id="xpText">0 / 100 XP</span></div>
+          <div class="progress"><div id="xpBar"></div></div>
+          <div class="stats">
+            <div><small>VIDA</small><b id="hpText">30 / 30</b></div>
+            <div><small>MOEDAS</small><b id="goldText">0</b></div>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>📜 Diário de jornada</h3>
+          <nav id="chapterNav"></nav>
+        </div>
+        <div class="panel compact">
+          <h3>🎒 Inventário</h3>
+          <p id="inventory">Bolsa vazia. Complete desafios para encontrar itens.</p>
+        </div>
+      </aside>
+
+      <section class="main-panel">
+        <div class="world-banner">
+          <div><span class="eyebrow">CAPÍTULO ATUAL</span><h1 id="chapterTitle">A Vila dos Aprendizes</h1><p id="chapterSubtitle">Tudo começa com uma ideia simples.</p></div>
+          <div class="chapter-number" id="chapterNumber">I</div>
+        </div>
+        <div class="content-card" id="gameContent"></div>
+        <footer class="footer-note">Seu progresso é salvo automaticamente neste navegador.</footer>
+      </section>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/game.js"></script>
+</body>
+</html>
